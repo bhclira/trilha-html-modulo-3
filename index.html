@@ -4,41 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>O Senhor dos Anéis</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        header img {
+            margin: 10px;
+        }
+        li {
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .anchors {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .anchors h1, h2 {
+            width: 100%;
+            margin-top: 10px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .anchors a {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            columns: blue;
+        }
+    </style>
 </head>
 <body>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
+    <header>   
+        <picture aria-label="Logotipo em da wikipedia similiar a um codigo de barra" class="logo">
+            <img alt="Logotipo do wikipedia" src="assets/images/logo-wiki.png" width="200"/>
+        </picture>
+    </header>
 
-    <div class="bar"></div>
+    <nav class="bar" aria-label="Barra de Navegação"></nav>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
+    <main class="content">
+        <nav class="sidebar">
+            <h2>Início</h2>
             <ul>
-                <li><a href="#">Links</a></li>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is#Estrutura_da_obra_e_plano_de_fundo_da_hist%C3%B3ria">Estrutura da obra e plano de fundo da história</a></li>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is#Detalhes_do_enredo">Detalhes do Enredo</a>
+                </li>
+                <li>
+                    <a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is#Cria%C3%A7%C3%A3o">Criação</a>
+                </li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="main">
-            
-        </div>
+        <section class="main">
+            <h1>O Senhor dos Anéis</h1>
+            <p>O Senhor dos Anéis (The Lord of the Rings, no original) é um livro de alta fantasia, escrito pelo escritor britânico J. R. R. Tolkien. Escrita entre 1937 e 1949, com muitas partes criadas durante a Segunda Guerra Mundial,[1] a saga é uma continuação de O Hobbit (1937). Embora Tolkien tenha planejado realizá-la em volume único, a obra foi originalmente publicada em três volumes (The Fellowship of the Ring, The Two Towers e The Return of the King) entre 1954 e 1955, com cada volume contendo dois livros cada, e foi assim, em três volumes, que se tornou popular. Desde então, a obra foi reimpressa várias vezes e traduzida para mais de 40 línguas, vendendo mais de 160 milhões de cópias, tornando-se um dos trabalhos mais populares da literatura do século XX.</p>
+        </section>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
+        <aside class="anchors">
+            <h1>The Lord of the Rings</h1>
+            <h2>O Senhor dos Anéis</h2>
+            <picture>
+                <img src="assets/images/The_Lord_of_the_Rings_logo.png" alt="Logotipo original de o senhor dos anéis em inglês" width="200"/>
+            </picture>
+            <h2>Livros</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/A_Sociedade_do_Anel" target="_blank">O Senhor dos Anéis: A Sociedade do Anel</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/As_Duas_Torres">O Senhor dos Anéis: As Duas Torres</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/O_Retorno_do_Rei" target="_blank">O Senhor dos Anéis: O Retorno do Rei</a></li>
             </ul>
-        </div>
-    </div>
+        </aside>
+    </main>
 
-    <div class="footer">
+    <footer class="footer">
 
-    </div>
+    </footer>
 </body>
 </html>
